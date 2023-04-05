@@ -18,11 +18,13 @@
     display: grid;
     align-items: center;
     justify-items: stretch;
-    grid-template-columns: 1fr 50%;
+    /*grid-template-columns: 1fr 50%;*/
+    grid-template-columns: minmax(350px, 15%) 50%;
     grid-template-rows: min-content max-content;
     column-gap: 10%;
     background-color: #F5F6F5;
-    padding-right: 10%;
+    /*padding-right: 10%;*/
+    margin-right: 25%;
     padding-top: 60px;
     padding-bottom: 60px;
     margin-bottom: 20px;
@@ -123,6 +125,7 @@
         padding-top: 40px;
         padding-bottom: 40px;
         margin-bottom: 20px;
+	margin-right: 0px;
         padding-left: 5%;
         padding-right: 5%;
         position: relative;
