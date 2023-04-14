@@ -160,9 +160,9 @@ transition: all 500ms linear;
 .sekceProduktu>*>table>tbody>tr>td{
   width: 33.333%;
 }
-.sekceProduktu>*>table>tbody>tr>td>*{
+/*.sekceProduktu>*>table>tbody>tr>td>*{
   margin:5px;
-}
+}*/
 .imgVTabulce{
   width:100%;
 }
@@ -1161,5 +1161,9 @@ span.flag.flag-druha-fotka{
 }
 /*KONEC NEWSLETTER*/
 
+/*uprava tabulek*/
+table.table tbody>tr>td {
+    padding: 0.75rem 1rem;
+}
 
 
