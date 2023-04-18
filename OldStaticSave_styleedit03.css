@@ -49,13 +49,13 @@
 	}
 
 	.top-navigation-menu {
-		width: 610px;
+		width: 620px;
 		padding-right: 20px;
 		justify-self: center;
 	}
 
 	.top-navigation-bar-menu {
-		width: 600px;
+		width: 100%;
 	}
 
 	.navigation-buttons>*,
