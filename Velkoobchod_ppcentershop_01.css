@@ -72,6 +72,18 @@
 	display: none;
 }
 
+ol.cart-header>li>a,
+ol.cart-header>li>strong{
+	font-size: 18px!important;
+}
+ol.cart-header>li>a::before,
+ol.cart-header>li>strong::before{
+	width: 40px!important;
+	height: 43px!important;
+	font-size: 20px!important;
+	line-height: 41px!important
+}
+
 /*sidebar*/
 .sidebar-inner>.banner {
 	border-top-width: 1px;
