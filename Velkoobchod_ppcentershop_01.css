@@ -1,0 +1,527 @@
+	.container {
+		width: 100%;
+		max-width: 1712px;
+	}
+
+/*header*/
+@media(max-width:992px) {
+	#header .site-name {
+		padding: 5px 0 !important;
+	}
+	#header .header-top,
+	#header .header-top .header-top-wrapper {
+		height: auto!important;
+	}
+}
+
+/*produkt*/
+#colorbox .advanced-order-suggestion,
+#colorbox .products-wrapper {
+	display: none;
+}
+.product .p .image {
+	background-color: transparent;
+}
+
+/*Objednavka*/
+.p-discount.p-cell {
+	display: none;
+}
+.sidebar-in-cart>*,
+#checkoutSidebar>* {
+	background: #faf7fd!important;
+	border-radius: 20px;
+}
+
+.checkout-box {
+	background: #faf7fd;
+}
+
+.ordering-process .co-box {
+	border-top-style: solid;
+	border-width: 1px;
+	border-radius: 0px!important;
+	border-color: #dadada;
+}
+
+.shipping-billing-table .radio-wrapper input[type="radio"]+label {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.co-shipping-address,
+.co-box.co-box-additional {
+	padding-top: 20px !important;
+}
+.show-tooltip.acronym[data-original-title] {
+	border-style: none;
+}
+.show-tooltip.acronym[data-original-title]:hover {
+	cursor: auto;
+}
+
+.tooltip-inner,
+.tooltip-arrow {
+	display: none;
+}
+.cart-content>.delivery-time {
+	margin-bottom: 40px;
+}
+
+.cart-content>.cart-summary {
+	display: none;
+}
+
+/*sidebar*/
+.sidebar-inner>.banner {
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-color: #dadada;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.sidebar-inner>.client-center-box>ul>li:nth-last-child(-n+3) {
+	display: none;
+}
+
+/*titulní strana*/
+@media(min-width:800px) {
+	#content>.product-slider-holder .products-block {
+		max-width: 100%;
+		transform: translate3d(0,0,0)!important;
+	}
+	#content>.product-slider-holder .products-block>div {
+		max-width:100% position: relative;
+		width: 50%!important;
+		border-width: 1px;
+		border-bottom-style: solid;
+		border-color: #dedede;
+		padding: 25px 0;
+	}
+	#content>.product-slider {
+		width: 100%!important;
+	}
+	#content>.product-slider-holder .products-block>.product:nth-last-child(-n+6) {
+		display: none!important;
+	}
+	#content>.product-slider-holder .products-block>div:nth-child(2n+1) {
+		border-right-style: solid;
+	}
+	#content>.product-slider-holder .products-block .p {
+		display: flex;
+		align-items: center;
+		flex-direction: row!important;
+	}
+	#content>.product-slider-holder .products-block .p > a {
+		flex-grow: 0;
+		flex-shrink: 0;
+		width: 150px;
+	}
+	#content>.product-slider-holder .flags,
+	.product-slider-holder .ratings-wrapper {
+		display: none;
+	}
+
+	#content>.product-slider-holder .products-block .p .p-in {
+		display: flex;
+		flex-grow: 1;
+		flex-shrink: 1;
+		align-items: center;
+		width: calc(100% - 70px);
+		padding-left: 16px;
+		padding-top: 0;
+	}
+
+	#content>.product-slider-holder .p-in-in {
+		flex-basis: 40%;
+	}
+
+	#content>.product-slider-holder .p-bottom {
+		flex-basis: 65%;
+	}
+
+	#content>.product-slider-holder .products-block > div .p .p-code {
+		display: none;
+	}
+
+	#content>.product-slider-holder .products-block > div .p .p-in .p-in-in .name {
+		-webkit-line-clamp: 4;
+		height: auto;
+	}
+
+	#content>.product-slider-holder .p-bottom.single-button>div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	#content>.product-slider-holder .p-bottom.single-button>div>* {
+		flex-grow: 1;
+	}
+
+	#content>.product-slider-holder .products-block > div .p .p-in .p-bottom > div .prices {
+		grid-column: 1;
+		grid-row-start: 1;
+		grid-row-end: 3;
+		flex-wrap: nowrap;
+	}
+	#content>.product-slider-holder .availability {
+		grid-row: 2;
+	}
+	#content>.product-slider-holder .price-standard::before {
+		content: "MPC:";
+	}
+
+	#content>.product-slider-holder .product-slider-pagination,
+	#content>.product-slider-holder.has-navigation .product-slider-navigation {
+		display: none;
+	}
+
+
+	@media(max-width: 1420px) {
+		#content>.product-slider-holder .products-block .p > a {
+			width: 100px;
+		}
+		#content>.product-slider-holder .products-block > div .p .p-in .p-in-in .name > span {
+			font-size: 14px;
+		}
+	}
+
+	@media(max-width: 1200px) {
+		#content>.product-slider-holder .products-block>div {
+		    width: 100%!important;
+		}
+		#content>.product-slider-holder .products-block>div:nth-child(2n+1) {
+			border-right-style: none;
+		}
+	}
+}
+
+/*ORIGINAL UPRAVY PRODUTKY SEKCE*/
+/*ZOBRAZIT VÍCE/ ZOBRAZIT MÉNĚ*/
+.read-more-state {
+	display: none;
+}
+.read-more-target {
+	opacity: 0;
+	max-height: 0;
+	font-size: 0;
+	transition: 0.25s ease;
+}
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+	opacity: 1;
+	font: inherit;
+	max-height: 999em;
+}
+.read-more-state ~ .read-more-trigger:before {
+	content: 'Zobrazit více';
+}
+.read-more-state:checked ~ .read-more-trigger:before {
+	content: 'Zobrazit méně';
+}
+.read-more-trigger,
+.zobrazitvice {
+	/* Tlacitko zobrazit více o produktu na blogu*/
+	cursor: pointer;
+	display: inline-block;
+	padding: 0.2em 2em;
+	margin: 1em 0.2em;
+	color: #ffffff;
+	font-size: 1.6rem;
+	line-height: 2;
+	background: #9068be;
+	border: 1px solid #ddd;
+	border-radius: 0.25em;
+	font-family: HelvetNowText,sans-serif!important;
+	font-style: normal;
+}
+/*konec ZOBRAZIT VÍCE/ ZOBRAZIT MÉNĚ*/
+
+/* Div to Zoom on hover - filtrační vložky a konvice */
+.zoomhover {
+	padding: 0;
+	transition: transform 0.2s;
+	/* Animation */
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+.zoomhover:hover {
+	cursor: pointer;
+}
+.zoomhover:active {
+	transform: scale(2);
+}
+/*konec Div to Zoom on hover - filtrační vložky a konvice */
+
+/*Kavy*/
+.divProduktu {
+	width: 100%;
+}
+.sekceProduktu:nth-child(odd) {
+	background-color: #f6f6f6;
+}
+.sekceProduktu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	min-height: 250px;
+	border-radius: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.sekceProduktu>* {
+	text-align: justify;
+}
+.sekceProduktu:last-child {
+	flex-wrap: nowrap;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	margin-top: 30px;
+	background-color: white;
+	min-height: 0;
+}
+.sekceProduktu:last-child > .text70procent {
+	max-width: 100%;
+}
+
+.sekceProduktu>*>table {
+	text-align: center;
+	line-height: 17px;
+	border-spacing: 20px 0;
+	table-layout: fixed;
+	margin: 30px auto;
+	width: 90%;
+}
+.sekceProduktu>*>table>tbody>tr>td {
+	width: 33.333%;
+}
+.sekceProduktu>*>table>tbody>tr>td>* {
+	margin: 5px;
+}
+.imgVTabulce {
+	width: 100%;
+}
+
+/*table produkt napr vitamin c*/
+.tableProdukt > tbody > tr > td {
+	padding: 10px 20px;
+	border-width: 1px;
+	border-style: outset;
+}
+.tableProdukt {
+	box-shadow: 2px 2px 10px 0 grey;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/*overflow scroll*/
+.content-wrapper:has(.asset30procentRightSideOverflowNatiosKapsle) {
+	overflow-x: hidden;
+}
+
+@media screen and (min-width: 1100px) {
+	.imghide_pc {
+		display: none;
+	}
+	.text100procent {
+		max-width: 90%;
+		justify-self: center;
+		width: 90%;
+	}
+	.text70procent {
+		max-width: 60%;
+		justify-self: center;
+		/*padding-right: 3%;*/
+		margin-left: 5%;
+		margin-right: auto;
+	}
+	.text70procentStred {
+		max-width: 70%;
+		justify-self: center;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.asset15procentStred {
+		max-width: 15%;
+		justify-self: center;
+	}
+	.asset30procent {
+		max-width: 30%;
+		margin-bottom: -5%;
+	}
+	.asset30procentBezMarginu {
+		max-width: 30%;
+		margin: auto;
+	}
+	.asset30procentRightSideOverflowNatiosKapsle {
+		max-width: 55%;
+		position: absolute;
+		right: -10%;
+	}
+	.text60procent {
+		max-width: 50%;
+		justify-self: center;
+		margin-left: 5%;
+	}
+	.text50procent {
+		max-width: 45%;
+		justify-self: center;
+		margin: auto 5% auto auto;
+	}
+	.text60procentStred {
+		max-width: 60%;
+		justify-self: center;
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.text50procentvlevo {
+		max-width: 45%;
+		justify-self: center;
+		margin: auto auto auto 5%;
+	}
+	.asset40procent {
+		max-width: 40%;
+		margin: auto;
+	}
+	.asset15procent {
+		max-width: 20%;
+		min-width: 10%;
+		margin-bottom: -5%;
+	}
+	.asset25procent {
+		max-width: 20%;
+		min-width: 20%;
+		margin-top: -5%;
+	}
+	.asset20procentStred {
+		max-width: 20%;
+		justify-self: center;
+	}
+	.asset20procent {
+		max-width: 15%;
+	}
+
+	.asset50procent {
+		max-width: 48%;
+		margin: auto;
+	}
+	.asset30procent > span > * {
+		max-width: 130%;
+	}
+	.asset15procent > span > * {
+		max-width: 155%;
+		max-height: 120%;
+		margin-left: -20%;
+	}
+	.asset25procent > span > * {
+		max-width: 150%;
+		margin-left: -10%;
+	}
+	.asset40procent > span > * {
+		width: 100%;
+	}
+	.asset50procent > span > * {
+		width: 100%;
+	}
+	.sekceProduktu:last-child {
+		padding-left: 5%;
+	}
+}
+.hideeverywhere {
+	display: none;
+}
+
+@media screen and (max-width: 1099px) {
+	.imghide {
+		display: none;
+	}
+	.text70procent,
+	.text100procent {
+		max-width: 100%;
+		padding: 0 10px;
+		justify-self: center;
+	}
+	.text70procentStred {
+		max-width: 100%;
+		padding: 0 10px;
+		justify-self: center;
+	}
+	.asset15procentStred {
+		max-width: 60%;
+		justify-self: center;
+	}
+	.asset30procent,
+	.asset30procentBezMarginu {
+		max-width: 70%;
+	}
+	.asset30procentRightSideOverflowNatiosKapsle {
+		max-width: 100%;
+	}
+	.text60procent,
+	.text50procentStred {
+		max-width: 100%;
+		padding: 0 3%;
+		justify-self: center;
+	}
+	.text50procent {
+		max-width: 100%;
+		padding: 0 3%;
+		justify-self: center;
+	}
+	.text50procentvlevo {
+		max-width: 100%;
+		padding: 0 3%;
+		justify-self: center;
+	}
+	.asset40procent {
+		max-width: 100%;
+	}
+	.asset50procent {
+		max-width: 100%;
+	}
+	.asset15procent {
+		max-width: 60%;
+	}
+	.asset25procent,
+	.asset20procentStred {
+		max-width: 60%;
+	}
+	.asset30procent > span > * {
+		max-width: 100%;
+		padding: 10px;
+	}
+	.asset15procent > span > * {
+		max-width: 100%;
+		padding: 10px;
+	}
+	.asset25procent > span > * {
+		max-width: 100%;
+		padding: 10px;
+	}
+	.asset40procent > span > * {
+		width: 100%;
+	}
+	.sekceProduktu {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.sekceProduktu>*>table {
+		width: 100%;
+	}
+	.nutricniHodnoty {
+		padding-left: 3%;
+		padding-right: 3%;
+		width: 94%;
+	}
+	.assetHideMobile {
+		display: none;
+	}
+	.description-inner {
+		padding: 0;
+	}
+}
+/*konec kav*/
+/*KONEC UPRAVY PRODUTKY SEKCE*/
