@@ -1,7 +1,31 @@
-	.container {
-		width: 100%;
-		max-width: 1712px;
-	}
+.container {
+ 	width: 100%;
+	max-width: 1712px;
+}
+
+#footer h4{
+	display: none;
+}
+.footer-rows .custom-footer>div{
+	width: 100%;
+	flex-basis: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.footer-rows .custom-footer{
+	padding-bottom: 0px;
+}
+
+.custom-footer__articles>ul{
+	display: grid;
+	width: 100%;
+	grid-template-columns: 1fr 1fr 1fr;
+	text-align: center;
+}
+.custom-footer__articles>ul>li *{
+	color: white!important;
+}
 
 /*header*/
 @media(max-width:992px) {
