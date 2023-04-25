@@ -748,3 +748,35 @@ ol.cart-header>li>strong::before{
     padding: 5px;
   }
 }
+
+/*uvodni banery*/
+.next-to-carousel-banners{
+	max-width: 1712px;
+	margin: auto;
+	padding: 0 3%;
+	display: none;
+}
+
+.next-to-carousel-banners>div{
+	padding: 0 10px;
+	transition: all 0.2s ease-in-out
+}
+.next-to-carousel-banners>div::after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	opacity: 0;
+	transition: all 0.2s ease-in-out;
+}
+
+.next-to-carousel-banners>div:hover{
+	scale: 1.02;
+}
+.next-to-carousel-banners>div:hover::after{
+	opacity: 0.07;
+}
