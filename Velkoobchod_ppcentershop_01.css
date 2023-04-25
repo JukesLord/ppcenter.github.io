@@ -20,15 +20,25 @@
 .footer-rows .custom-footer{
 	padding-bottom: 0px;
 }
+#footer,
+.footer-bottom-full-width,
+.footer-bottom{
+	background: #f6f6f6;
+}
+#footer *{
+	color: #343434!important
+}
+#footer>.container{
+	border-bottom-style: solid;
+	border-bottom-color: #dedede;
+	border-width: 1px;
+}
 
 .custom-footer__articles>ul{
 	display: grid;
 	width: 100%;
 	grid-template-columns: 1fr 1fr 1fr;
 	text-align: center;
-}
-.custom-footer__articles>ul>li *{
-	color: white!important;
 }
 
 /*header*/
