@@ -810,6 +810,9 @@ ol.cart-header>li>strong::before{
 	grid-row: 2;
 	grid-column: 2;
 }
+.wide-carousel>.carousel>.carousel-control{
+	display: none;
+}
 
 .next-to-carousel-banners{
 	max-width: 1712px;
