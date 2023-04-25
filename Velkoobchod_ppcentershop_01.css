@@ -147,8 +147,11 @@ ol.cart-header>li>strong::before{
 	#content>.product-slider-holder .products-block>.product:nth-child(-n+3) {
 	    display: none!important
 	}
-	#content>.product-slider-holder .products-block>div:nth-child(2n+1) {
+	#content>.product-slider-holder .products-block>div:nth-child(2n+2) {
 		border-right-style: solid;
+	}
+	#content>.product-slider-holder .products-block>.product:nth-last-child(-n+5) {
+		border-bottom-style: none;
 	}
 	#content>.product-slider-holder .products-block .p {
 		display: flex;
