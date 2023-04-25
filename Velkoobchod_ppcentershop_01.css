@@ -175,7 +175,8 @@ ol.cart-header>li>strong::before{
 		transform: translate3d(0,0,0)!important;
 	}
 	#content>.product-slider-holder .products-block>div {
-		max-width:100% position: relative;
+		max-width:100%;
+		position: relative;
 		width: 50%!important;
 		border-width: 1px;
 		border-bottom-style: solid;
@@ -291,8 +292,12 @@ ol.cart-header>li>strong::before{
 		#content>.product-slider-holder .products-block>div {
 		    width: 100%!important;
 		}
-		#content>.product-slider-holder .products-block>div:nth-child(2n+1) {
+		#content>.product-slider-holder .products-block>div {
 			border-right-style: none;
+			border-bottom-style: solid;
+		}
+		#content>.product-slider-holder .products-block>.product:nth-last-child(-n+4) {
+			border-bottom-style: none;
 		}
 	}
 }
