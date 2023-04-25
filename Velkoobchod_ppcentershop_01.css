@@ -755,6 +755,8 @@ ol.cart-header>li>strong::before{
 	margin: auto;
 	padding: 0 3%;
 	display: none;
+	margin-top: 30px;
+    	margin-bottom: 10px;
 }
 
 .next-to-carousel-banners>div{
