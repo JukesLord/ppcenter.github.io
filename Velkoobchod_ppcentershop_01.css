@@ -52,6 +52,26 @@
 }
 
 /*header*/
+@media (min-width:768px) {
+	#header .header-top .header-top-wrapper>.site-name {
+		order: 1;
+		flex-grow: 1;
+		margin-left: 210px;
+	}
+	#header .header-top .header-top-wrapper>.navigation-tools {
+		order: 2;
+		width: auto;
+	}
+	#header .header-top .header-top-wrapper>.navigation-tools button {
+		font-weight: bold;
+	}
+	#header .header-top .header-top-wrapper>.navigation-buttons {
+		order: 3;
+		width: auto;
+		padding: 0;
+	}
+}
+
 @media(max-width:992px) {
 	#header .site-name {
 		padding: 5px 0 !important;
