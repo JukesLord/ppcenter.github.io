@@ -1,6 +1,7 @@
 .container {
  	width: 100%;
 	max-width: 1712px;
+	padding: 0 2%;
 }
 
 #footer h4{
@@ -35,6 +36,9 @@
 	#header .header-top,
 	#header .header-top .header-top-wrapper {
 		height: auto!important;
+	}
+	.container {
+ 		padding: 0 8px;
 	}
 }
 
