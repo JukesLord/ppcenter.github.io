@@ -293,11 +293,11 @@ ol.cart-header>li>strong::before{
 		    width: 100%!important;
 		}
 		#content>.product-slider-holder .products-block>div {
-			border-right-style: none;
+			border-right-style: none!important;
 			border-bottom-style: solid;
 		}
 		#content>.product-slider-holder .products-block>.product:nth-last-child(-n+4) {
-			border-bottom-style: none;
+			border-bottom-style: none!important;
 		}
 	}
 }
