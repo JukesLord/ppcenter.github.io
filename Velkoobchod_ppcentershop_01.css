@@ -776,6 +776,41 @@ ol.cart-header>li>strong::before{
 }
 
 /*uvodni banery*/
+
+.wide-carousel {
+	max-width: 1712px;
+	margin: 20px auto auto;
+	padding: 0 3%;
+}
+
+.wide-carousel>#carousel>.carousel-inner {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	min-height: auto!important;
+	gap: 20px;
+}
+
+
+.wide-carousel>#carousel>.carousel-inner>div{
+	display:flex;
+}
+
+.wide-carousel>#carousel>.carousel-inner>div:nth-child(1) {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	grid-column: 1;
+}
+.wide-carousel>#carousel>.carousel-inner>div:nth-child(2) {
+	grid-row: 1;
+	grid-column: 2;
+
+}
+.wide-carousel>#carousel>.carousel-inner>div:nth-child(3) {
+	grid-row: 2;
+	grid-column: 2;
+}
+
 .next-to-carousel-banners{
 	max-width: 1712px;
 	margin: auto;
@@ -787,9 +822,15 @@ ol.cart-header>li>strong::before{
 
 .next-to-carousel-banners>div{
 	padding: 0 5px;
+}
+
+.next-to-carousel-banners>div,
+.wide-carousel>#carousel>.carousel-inner>div{
 	transition: all 0.3s ease-in-out
 }
-.next-to-carousel-banners>div::after{
+
+.next-to-carousel-banners>div::after,
+.wide-carousel>#carousel>.carousel-inner>div::after{
 	content: "";
 	display: block;
 	width: 100%;
@@ -802,9 +843,11 @@ ol.cart-header>li>strong::before{
 	transition: all 0.3s ease-in-out;
 }
 
-.next-to-carousel-banners>div:hover{
+.next-to-carousel-banners>div:hover,
+.wide-carousel>#carousel>.carousel-inner>div:hover{
 	scale: 1.01;
 }
-.next-to-carousel-banners>div:hover::after{
+.next-to-carousel-banners>div:hover::after,
+.wide-carousel>#carousel>.carousel-inner>div:hover::after{
 	opacity: 0.07;
 }
