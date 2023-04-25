@@ -218,7 +218,15 @@ ol.cart-header>li>strong::before{
 	#content>.product-slider-holder.has-navigation .product-slider-navigation {
 		display: none;
 	}
+	.homepage-group-title.h4{
+		margin-top: 0;
+		padding-top: 30px;
+		margin-bottom: 0px;
+	}
 
+	#content>.product-slider-holder.has-navigation{
+		padding-bottom: 10px;
+	}
 
 	@media(max-width: 1420px) {
 		#content>.product-slider-holder .products-block .p > a {
