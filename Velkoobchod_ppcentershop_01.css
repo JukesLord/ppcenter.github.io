@@ -151,8 +151,12 @@ ol.cart-header>li>strong::before{
 	#content>.product-slider-holder .products-block .p > a {
 		flex-grow: 0;
 		flex-shrink: 0;
-		width: 150px;
+		width: 120px;
 	}
+	#content>.product-slider-holder .products-block > div .p .p-in .p-in-in .name > span {
+    		font-size: 14px;
+	}
+	
 	#content>.product-slider-holder .flags,
 	.product-slider-holder .ratings-wrapper {
 		display: none;
