@@ -91,6 +91,10 @@
 	background-color: transparent;
 }
 
+.p-detail-full-width #tab-content{
+	    box-shadow: 4px 4px 8px 8px rgba(0, 0, 0, 0.04);
+}
+
 /*Objednavka*/
 .p-discount.p-cell {
 	display: none;
