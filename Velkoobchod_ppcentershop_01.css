@@ -854,3 +854,45 @@ ol.cart-header>li>strong::before{
 .wide-carousel>#carousel>.carousel-inner>div:hover::after{
 	opacity: 0.07;
 }
+
+
+/*hlavni menu*/
+@media (min-width: 768px) {
+	.navigation-in>ul>li.ext>ul>li>div>a {
+		font-size: 14px;
+	}
+	.menu-level-2 {
+		justify-content: flex-start!important;
+	}
+	.menu-level-2>li * {
+		padding: 0 !important;
+		margin: auto;
+	}
+	.menu-level-3 {
+		display: none!important;
+	}
+	.navigation-in > ul > li.ext > ul > li > a img,
+	.navigation-in>ul>li.ext>ul>li>a.menu-image {
+
+		max-width: 76px;
+		height: auto;
+		max-height: 54px;
+	}
+	.navigation-in>ul>li.ext>ul>li {
+		width: 25%;
+		flex-basis: 25%;
+	}
+	@media (min-width: 1200px) {
+		.navigation-in>ul>li.ext>ul>li {
+			width: 20%;
+			flex-basis: 20%;
+		}
+	}
+	@media (min-width: 1440px) {
+		.navigation-in>ul>li.ext>ul>li {
+			width: 16.66%;
+			flex-basis: 16.66%;
+		}
+	}
+}
+
