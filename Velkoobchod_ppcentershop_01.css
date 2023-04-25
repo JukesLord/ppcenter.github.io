@@ -758,8 +758,8 @@ ol.cart-header>li>strong::before{
 }
 
 .next-to-carousel-banners>div{
-	padding: 0 10px;
-	transition: all 0.2s ease-in-out
+	padding: 0 5px;
+	transition: all 0.3s ease-in-out
 }
 .next-to-carousel-banners>div::after{
 	content: "";
@@ -771,7 +771,7 @@ ol.cart-header>li>strong::before{
 	left: 0;
 	background-color: #fff;
 	opacity: 0;
-	transition: all 0.2s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .next-to-carousel-banners>div:hover{
