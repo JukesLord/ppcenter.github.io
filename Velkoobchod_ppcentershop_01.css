@@ -35,10 +35,20 @@
 }
 
 .custom-footer__articles>ul{
-	display: grid;
-	width: 100%;
-	grid-template-columns: 1fr 1fr 1fr;
-	text-align: center;
+	display: flex;
+	width: auto;
+	gap: 30px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.footer-bottom{
+	justify-content: center;
+	gap: 20px;
+}
+
+.footer-bottom>span{
+	width: auto;
+	justify-content: center;
 }
 
 /*header*/
