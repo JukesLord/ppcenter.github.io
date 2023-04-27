@@ -821,7 +821,7 @@ ol.cart-header>li>strong::before{
 
 
 .wide-carousel>#carousel>.carousel-inner>div{
-	display: grid;
+	display: block;
 }
 
 .wide-carousel>#carousel>.carousel-inner>div:nth-child(1) {
@@ -837,7 +837,7 @@ ol.cart-header>li>strong::before{
 .wide-carousel>#carousel>.carousel-inner>div:nth-child(3) {
 	grid-row: 2;
 	grid-column: 2;
-	align-items: end;
+	top: 10px;
 }
 .wide-carousel>#carousel>.carousel-inner>div:nth-child(2) img,
 .wide-carousel>#carousel>.carousel-inner>div:nth-child(3) img{
