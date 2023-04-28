@@ -169,7 +169,7 @@ ol.cart-header>li>strong::before{
 }
 
 /*titulní strana*/
-@media(min-width:800px) {
+@media(min-width:771px) {
 	#content>.product-slider-holder .products-block {
 		max-width: 100%;
 		transform: translate3d(0,0,0)!important;
