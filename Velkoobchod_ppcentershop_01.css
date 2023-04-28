@@ -984,7 +984,7 @@ ol.cart-header>li>strong::before{
 	}
 }
 
-/*loga animace nase znacky*/
+/*loga znacky slider*/
 @keyframes sliding_logos {
 	0% {
 		transform: translateX(0);
@@ -993,7 +993,6 @@ ol.cart-header>li>strong::before{
 		transform: translateX(calc((-150px - 50px) * 8));
 	}
 }
-
 .logo_slider {
 	height: 150px;
 	margin: auto;
@@ -1004,42 +1003,86 @@ ol.cart-header>li>strong::before{
 	align-items: center;
 }
 .logo_slide_track {
-	animation: sliding_logos 120s linear infinite;
+	animation: sliding_logos 75s linear infinite;
 	display: flex;
 	gap: 50px;
-	width: calc((150px + 50px) * 16); /*gap + width x 2pocet znacek */
-
+	width: calc((150px + 50px) * 16);
+	/*gap + width x 2pocet znacek */
 }
-.logo_slide{
+.logo_slide {
 	width: 150px;
 	display: grid;
 	align-items: center;
 	background: transparent;
 	transition: all 0.3s ease-out;
 }
-
-.logo_slide img{
+.logo_slide img {
 	width: auto;
 	max-height: 100px;
 	margin: auto;
-	padding: 0px 10px;
+	padding: 0 10px;
 	transition: all 0.3s ease-out;
 }
-
-.logo_slide:hover img{
+.logo_slide:hover img {
 	scale: 1.1;
-	transform: translatey(-5px)
+	transform: translatey(-5px);
 }
-.homepage-banners-full-width.middle-banners>.banners-content{
+.homepage-banners-full-width.middle-banners>.banners-content {
 	background: #faf7fd;
-	margin: 20px 0px;
-	padding: 20px 0px
+	margin: 20px 0;
+	padding: 20px 0;
 }
-.homepage-banners-full-width.middle-banners>.banners-content> .banner-wrapper>span{
-	padding: 0px 32px
+.homepage-banners-full-width.middle-banners>.banners-content> .banner-wrapper>span {
+	padding: 0 32px;
+	max-width: 100%;
+	width: clamp(300px, 100%, 1712px);
 }
-.homepage-banners-full-width.middle-banners h2{
+.homepage-banners-full-width.middle-banners h2 {
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-
+@media (max-width: 1420px) {
+	@keyframes sliding_logos {
+		0% {
+			transform: translateX(0);
+		}
+		100% {
+			transform: translateX(calc((-120px - 20px) * 8));
+		}
+	}
+	.logo_slider {
+		height: 100px;
+	}
+	.logo_slide {
+		width: 120px;
+	}
+	.logo_slide img {
+		max-height: 90px;
+	}
+	.logo_slide_track {
+		animation: sliding_logos 120s linear infinite;
+		display: flex;
+		gap: 20px;
+		width: calc((120px + 20px) * 16);
+		/*gap + width x 2pocet znacek */
+	}
+}
+@media (max-width: 991px) {
+	.logo_slide_track {
+		flex-wrap: wrap;
+		width: 100%;
+		animation: none;
+		column-gap: 0;
+		justify-content: center;
+	}
+	.logo_slider {
+		height: auto;
+	}
+	.logo_slide_track>div:nth-last-child(-n+8) {
+		display: none;
+	}
+	.logo_slide {
+		width: 33%;
+		padding: 20px 5%;
+	}
+}
