@@ -1083,6 +1083,6 @@ ol.cart-header>li>strong::before{
 	}
 	.logo_slide {
 		width: 33%;
-		padding: 20px 5%;
+		padding: 5px 10px;
 	}
 }
