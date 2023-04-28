@@ -851,7 +851,7 @@ ol.cart-header>li>strong::before{
 .next-to-carousel-banners{
 	max-width: 1712px;
 	margin: auto;
-	padding: 0 3%;
+	padding: 0;
 	display: none;
 	margin-top: 30px;
     	margin-bottom: 10px;
@@ -982,5 +982,64 @@ ol.cart-header>li>strong::before{
 			flex-basis: 16.66%;
 		}
 	}
+}
+
+/*loga animace nase znacky*/
+@keyframes sliding_logos {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(calc((-150px - 50px) * 8));
+	}
+}
+
+.logo_slider {
+	height: 150px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	width: auto;
+	display: grid;
+	align-items: center;
+}
+.logo_slide_track {
+	animation: sliding_logos 120s linear infinite;
+	display: flex;
+	gap: 50px;
+	width: calc((150px + 50px) * 16); /*gap + width x 2pocet znacek */
+
+}
+.logo_slide{
+	width: 150px;
+	display: grid;
+	align-items: center;
+	background: transparent;
+	transition: all 0.3s ease-out;
+}
+
+.logo_slide img{
+	width: auto;
+	max-height: 100px;
+	margin: auto;
+	padding: 0px 10px;
+	transition: all 0.3s ease-out;
+}
+
+.logo_slide:hover img{
+	scale: 1.1;
+	transform: translatey(-5px)
+}
+.homepage-banners-full-width.middle-banners>.banners-content{
+	background: #faf7fd;
+	margin: 20px 0px;
+	padding: 20px 0px
+}
+.homepage-banners-full-width.middle-banners>.banners-content> .banner-wrapper>span{
+	padding: 0px 32px
+}
+.homepage-banners-full-width.middle-banners h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
