@@ -34,6 +34,9 @@ button.zavritPopup {
 	border-style: none;
 	background: #E91B7D;
 }
+.velkoobchod-popup button {
+	margin: 10px 20px;
+}
 @media(max-width: 800px) {
 	.velkoobchod-popup {
 		width: 100%;
