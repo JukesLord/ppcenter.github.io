@@ -1,5 +1,5 @@
 .velkoobchod-popup {
-	position: absolute;
+	position: fixed;
 	width: 50%;
 	min-height: 50%;
 	z-index: 9999;
