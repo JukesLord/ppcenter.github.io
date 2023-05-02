@@ -1091,6 +1091,3 @@ ol.cart-header>li>strong::before{
 #order-billing-methods::before{
 	content: "Omlouváme se, platba kartou je dočasně nedostupná"
 }
-.radio-wrapper:has(.name-billingId-70){
-	display: none;
-}
