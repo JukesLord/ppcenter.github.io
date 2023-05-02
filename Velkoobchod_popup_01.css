@@ -38,7 +38,7 @@ button.zavritPopup {
 	margin: 10px 20px;
 }
 
-.velkoobchod-popup>p:nth-child(3){
+.velkoobchod-popup>p:last-child{
 	font-size: 18px;
 	margin-top: 20px;
 }
