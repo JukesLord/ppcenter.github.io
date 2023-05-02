@@ -39,7 +39,8 @@ button.zavritPopup {
 }
 
 .velkoobchod-popup>p:nth-child(3){
-	font-size: 14px;
+	font-size: 18px;
+	margin-top: 20px;
 }
 @media(max-width: 800px) {
 	.velkoobchod-popup {
