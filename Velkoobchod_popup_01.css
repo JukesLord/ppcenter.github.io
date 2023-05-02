@@ -37,6 +37,10 @@ button.zavritPopup {
 .velkoobchod-popup button {
 	margin: 10px 20px;
 }
+
+.velkoobchod-popup>p:nth-child(3){
+	font-size: 14px;
+}
 @media(max-width: 800px) {
 	.velkoobchod-popup {
 		width: 100%;
