@@ -1087,7 +1087,22 @@ ol.cart-header>li>strong::before{
 	}
 }
 
-
+/*platba kartou*/
 #order-billing-methods::before{
 	content: "Omlouváme se, platba kartou je dočasně nedostupná"
+}
+
+.radio-wrapper:has(.name-billingId-70){
+	position: relative;
+}
+.radio-wrapper:has(.name-billingId-70)::after
+{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 1px;
+  background: black;
+  content: "";
+  width: 100%;
+  display: block;
 }
