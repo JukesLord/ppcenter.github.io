@@ -136,6 +136,11 @@
 .tooltip-arrow {
 	display: none;
 }
+body.in-krok-1 .tooltip-inner,
+body.in-krok-1 .tooltip-arrow {
+	display: block;
+}
+
 .cart-content>.delivery-time {
 	margin-bottom: 40px;
 }
