@@ -1104,7 +1104,6 @@ ol.cart-header>li>strong::before{
     padding: 10px;
     background: white;
     z-index: 999;
-    filter: drop-shadow(10px 10px 8px hsla(268,40%,58%,30%));
     border-style: solid;
     border-width: 2px;
     border-radius: 15px;
