@@ -16,7 +16,7 @@ function setCookie( c_name, value, exdays ) {
 		exdate.setDate( exdate.getDate() + exdays );
 		c_value += '; expires=' + exdate.toUTCString();
 	}
-	document.cookie = c_name + '=' + c_value;
+	document.cookie = c_name + '=' + c_value +";path=/";
 }
 
 function getCookie( c_name ) {
