@@ -1,5 +1,4 @@
-/*SIDEBAR POPUP ANIMATIONS*/
-	$("#close-side-popup").on("click", closePopup);
+$("#close-side-popup").on("click", closePopup);
   
   function closePopup(){
   	$("#cookie-side").addClass("popup-closed");
@@ -9,8 +8,7 @@
       $("#cookie-side").removeClass("side-popup-active");
     }, 900)
 }    
-    
-/*COOKIES*/    
+     
 function setCookie( c_name, value, exdays ) {
 	var c_value = escape(value);
 	if (exdays) {
