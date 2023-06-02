@@ -703,8 +703,8 @@ span.flag.flag-druha-fotka{
 	order: 1;
 	margin-top: 5px !important;
 	margin-bottom: 20px !important;
-	max-height: 79px!important;
-	min-height: 79px;
+	max-height: 78px!important;
+	min-height: 78px;
 }
 /*rozlozeni ceny produktu v hlavni mrizce*/
 .products-block .p-bottom .prices {
