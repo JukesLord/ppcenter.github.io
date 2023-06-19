@@ -1,0 +1,422 @@
+.header-contact {
+	display: none;
+}
+
+.site-name>a>img {
+  max-height: 77px!important;
+  width: 300px;
+}
+
+@media (min-width: 768px) {
+	.dklab-delivery-box {
+		background: #7b589e!important;
+	}
+
+	.top-navigation-contacts {
+		display: none!important;
+	}
+	.top-navigation-bar {
+		background-color: #9068be;
+	}
+	.top-navigation-bar>*>* {
+		background-color: transparent;
+	}
+	#header,
+	.breadcrumbs-wrapper {
+		padding: 0 !important;
+	}
+	#header {
+		max-width: 100%;
+		background: rgb(144,104,190);
+		background: -moz-linear-gradient(180deg, rgba(144,104,190,1) 0%, rgba(150,108,198,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(144,104,190,1) 0%, rgba(150,108,198,1) 100%);
+		background: linear-gradient(180deg, rgba(144,104,190,1) 0%, rgba(150,108,198,1) 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#9068be",endColorstr="#966cc6",GradientType=1);
+	}
+
+	.navigation-wrapper,
+	.top-navigation-bar .container {
+		max-width: 2560px;
+	}
+
+	.navigation-wrapper {
+		background: #9068be;
+	}
+
+	.header-top>* {
+		margin-bottom: auto;
+	}
+
+	.top-navigation-bar .container {
+		display: grid;
+		grid-template-columns: 200px 1fr 200px;
+		justify-content: end;
+		padding-top: 5px;
+	}
+
+	.top-navigation-menu {
+		width: 620px;
+		padding-right: 20px;
+		justify-self: center;
+	}
+
+	.top-navigation-bar-menu {
+		width: 100%;
+	}
+
+	.navigation-buttons>*,
+	.navigation-buttons>*>* {
+		color: white!important;
+	}
+	.dkLabFavHeaderIconBtn>em,
+	.cart-count>i {
+		color: #9068be!important;
+		background: white!important;
+	}
+	.site-name-wrapper {
+		left: -5px;
+		position: relative;
+		top: -10px;
+	}
+
+	.top-navigation-bar {
+		border-style: none;
+	}
+	.top-navigation-bar-menu>li>a,
+	.top-navigation-menu-trigger::before,
+	.top-navigation-contacts>a,
+	#topNavigationDropdown,
+	.top-nav-button>span {
+		color: white;
+	}
+	.top-navigation-bar a:hover,
+	.top-navigation-bar .dropdown button:hover,
+	.top-navigation-menu-trigger:hover::before,
+	.top-navigation-contacts>a:hover,
+	#topNavigationDropdown:hover,
+	.top-nav-button>span:hover {
+		color: #dbdbdb;
+	}
+
+	.header-contact {
+		display: block;
+		margin-top: 5px;
+	}
+
+	.header-contact>* {
+		display: flex;
+	}
+	.header-contact>*::before,
+	.header-login::before {
+		margin-right: 1ex;
+		font-size: 20px;
+		display: inline-block;
+		speak: none;
+		vertical-align: middle;
+		font-family: shoptet;
+		font-style: normal;
+		font-weight: 400;
+		font-variant: normal;
+		line-height: 0;
+		text-transform: none;
+		text-decoration: none;
+		color: white;
+	}
+	.header-contact .project-phone::before {
+		content: '\e92d';
+		line-height: 25px;
+	}
+	.header-contact .project-email::before {
+		content: '\e924';
+		line-height: 25px;
+	}
+
+	.dkLabFavHeaderIconBtn {
+		left: 10px;
+		top: 11px!important;
+	}
+	.cart-count {
+		top: 11px!important;
+	}
+
+	.luigi-ac {
+		right: 250px!important;
+		/*stejne jako 1st column header-top*/
+
+	}
+	.header-top {
+		display: grid;
+		grid-template-columns: 250px 1fr 450px;
+		padding-top: 10px;
+		column-gap: 10px;
+		justify-items: center;
+		height: 78px;
+	}
+	.navigation-buttons::before {
+		content: "";
+		height: 50px;
+		width: 225px;
+	}
+
+	.navigation-buttons {
+		display: grid;
+		grid-template-columns: min-content max-content max-content;
+		justify-items: center;
+		align-items: start;
+		justify-content: end;
+		column-gap: 20px;
+	}
+	.navigation-buttons:has(.header-contact)::before {
+		display: none;
+	}
+
+	.search-form {
+		-webkit-box-shadow: 2px 2px 10px 5px #765395;
+		box-shadow: 2px 2px 10px 5px #765395;
+	}
+
+	.search {
+		width: 100%;
+		justify-self: center;
+		margin-top: 5px;
+		padding-right: 5%;
+
+	}
+	.search form fieldset .query-input {
+		height: 45px;
+	}
+	.search form fieldset .btn-default {
+		height: 43px;
+		top: 1px;
+	}
+
+	.search form fieldset .btn-default {
+		background-color: white;
+		color: #9068be;
+		border-color: white;
+		border-radius: 5px;
+	}
+	.search form fieldset .btn-default:hover {
+		border-radius: 0;
+		background-color: #ff8c00;
+		border-color: #ff8c00;
+		height: 45px;
+		top: 0;
+	}
+	.search form fieldset .btn-default::before {
+		content: "";
+		display: block;
+		width: 1px;
+		height: 32px;
+		position: absolute;
+		background-color: #9068be;
+		top: 5px;
+		left: -2px;
+		opacity: 1;
+		transition: all 0.2s ease-out;
+	}
+	.search form fieldset .btn-default:hover::before {
+		opacity: 0;
+	}
+	.query-input {
+		border-right-style: solid;
+		border-radius: 4px;
+	}
+	.top-navigation-tools {
+		padding-right: 7px;
+	}
+	.top-nav-button-login::before,
+	.top-nav-button-account::before {
+		content: url("https://www.ppcentershop.cz/user/documents/upload/gallery/user-login-icon-svg.svg");
+		top: 3px;
+		position: relative;
+	}
+
+	nav#navigation {
+		height: 42px;
+	}
+
+	.navigation-in>.menu-level-1>li {
+		border-style: none!important;
+
+	}
+	.navigation-in>.menu-level-1>li>a {
+		height: 42px;
+		padding-top: 5px !important;
+		padding-bottom: 5px !important;
+		display: grid!important;
+		align-items: center;
+	}
+	.menu-helper {
+		height: 2px;
+		right: 13px;
+	}
+	.menu-helper::after {
+		background: transparent;
+	}
+
+	.navigation-in ul li a b {
+		color: white;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	.navigation-in > ul > li:nth-child(1) a b,
+	.navigation-in > ul > li:nth-child(2) a b,
+	.navigation-in > ul > li:nth-child(8) a b,
+	.navigation-in > ul > li.menu-item-2232 a b {
+		color: white;
+	}
+
+	.top-navigation-bar {
+		background: rgb(135,99,177);
+		background: -moz-linear-gradient(180deg, rgba(135,99,177,1) 0%, rgba(144,104,190,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(135,99,177,1) 0%, rgba(144,104,190,1) 100%);
+		background: linear-gradient(180deg, rgba(135,99,177,1) 0%, rgba(144,104,190,1) 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#8763b1",endColorstr="#9068be",GradientType=1);
+
+	}
+	.navigation-wrapper {
+		background: rgb(144,104,190);
+		background: -moz-linear-gradient(180deg, rgba(144,104,190,1) 0%, rgba(150,108,198,1) 100%);
+		background: -webkit-linear-gradient(180deg, rgba(144,104,190,1) 0%, rgba(150,108,198,1) 100%);
+		background: linear-gradient(180deg, rgba(144,104,190,1) 0%, rgba(150,108,198,1) 100%);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#9068be",endColorstr="#966cc6",GradientType=1);
+
+	}
+	.menu-level-1,
+	#navigation,
+	.navigation-in {
+		background-color: transparent;
+	}
+
+	.navigation-in>ul>li>a b {
+		transition: all 0.1s ease-out;
+	}
+	.navigation-in>ul>li>a {
+		transition: all 0s;
+		border-right-style: solid;
+		border-right-width: 1px;
+		border-right-color: transparent;
+	}
+
+	/*fix na hover menu*/
+	.navigation-in .exp {
+		padding-left: 1px !important;
+		padding-right: 1px !important;
+	}
+	.navigation-in>ul>li>a:hover,
+	li.exp>a {
+		margin-left: 0;
+		margin-right: 0;
+		background-color: rgba(255,255,255,0.1)!important;
+		border-right-style: solid!important;
+		border-right-width: 1px;
+		border-right-color: transparent;
+		*/;
+	}
+	.fixedHeader {
+		top: -140px;
+	}
+	.fixedHeader > .container > .header-top > .site-name-wrapper >.site-name> a > img {
+		max-height: 60px!important;
+	}
+	.fixedHeader > .container > .header-top > .site-name-wrapper {
+		top: 0;
+	}
+	.btn.btn-icon.toggle-window.cart-count:not(.full)>span:nth-child(2) {
+		display: none!important;
+	}
+	/*.menu-helper>ul>li.ext:not(.splitted){
+		display: flex;
+	}*/
+
+}
+@media (max-width: 1200px) and (min-width: 768px) {
+
+	.navigation-buttons {
+		column-gap: 20px;
+		grid-template-columns: max-content max-content max-content;
+	}
+
+	.header-top {
+		grid-template-columns: 1fr 3fr max-content;
+	}
+	.site-name-wrapper {
+		left: -5px;
+		position: relative;
+		width: 90%;
+		top: 15px;
+
+	}
+	.top-navigation-bar .container {
+		grid-template-columns: 0 1fr max-content;
+	}
+	.top-navigation-menu {
+		max-width: 100%;
+	}
+	.fixedHeader > .container > .header-top > .site-name-wrapper {
+		top: 15px;
+	}
+}
+
+@media (max-width: 1200px) and (min-width: 1000px) {
+	.site-name-wrapper {
+		top: 10px;
+	}
+}
+
+@media(min-width: 992px) {
+	.user-action-cart.popup-widget.cart-widget.loader-wrapper {
+		margin-left: 0;
+		left: auto;
+		right: 10px;
+	}
+	.fixed-kosik {
+		position: fixed!important;
+		top: 50px!important;
+		right: 10px!important;
+		left: auto;
+	}
+	.user-action-login.popup-widget {
+		right: 40px;
+		left: auto;
+	}
+}
+
+@media(min-width: 1200px) {
+	.user-action-cart.popup-widget.cart-widget.loader-wrapper {
+		right: 70px;
+	}
+	.fixed-kosik {
+		right: 70px!important;
+	}
+}
+
+/*Ikonka kosiku*/
+.btn.cart-count::before,
+a.btn.cart-count::before {
+    content: url("https://www.ppcentershop.cz/user/documents/upload/gallery/cart_white04.svg");
+    transform: translatey(2px);
+}
+
+@media (max-width:767px) {
+    .btn.cart-count::before,
+    a.btn.cart-count::before {
+        content: url("https://www.ppcentershop.cz/user/documents/upload/gallery/cart_purple04.svg");
+    }
+    .top-navigation-tools>.responsive-tools>* {
+        color: #9068BE!important;
+    }
+    .responsive-tools>a[data-target="navigation"]::before {
+        background-color: transparent;
+        color: #9068BE;
+        font-size: 26px;
+    }
+    .top-navigation-tools>.dropdown * {
+        color: #9068BE!important;
+    }
+    .top-navigation-tools>.dropdown {
+        top: 22px!important;
+    }
+
+}
