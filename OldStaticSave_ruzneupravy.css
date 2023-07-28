@@ -227,6 +227,7 @@ transition: all 500ms linear;
     right: -10%;
 }
   .text60procent{
+	width: 50%;
     max-width: 50%;
     justify-self: center;
     margin-left:5%;
