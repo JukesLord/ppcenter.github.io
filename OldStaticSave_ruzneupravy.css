@@ -330,6 +330,7 @@ display: none;
     max-width: 100%;
    }
   .text60procent, .text50procentStred{
+	  width: 100%;
     max-width: 100%;
     padding: 0% 3%;
     justify-self: center;
