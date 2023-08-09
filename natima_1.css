@@ -69,6 +69,7 @@ border-bottom-color: rgba(0,0,0,0.07);
 #header .header-top {
 	padding-right: 40px;
 	justify-content: flex-end;
+	gap: 15px;
 }
 
 #header .header-top .site-name-wrapper {
@@ -248,9 +249,15 @@ button:hover,
 	background-image: url("https://587774.myshoptet.com/user/documents/upload/Natima/ZoomIcon_3.svg");
 	border-radius: calc(var(--border-radius) * 2) 0 0 calc(var(--border-radius) * 2);
 	filter:drop-shadow(-4px 2px 8px rgba(0,0,0,0.25));
-	width: 100%;
+	width: 40%;
+	transition: width 0.3s ease-in-out;
 	max-width: none;
 }
+#header .search:hover fieldset input,
+#header .search fieldset input.focus-visible{
+	width: 100%;
+}
+
 /*vyhledávání tlačítko*/
 #header .search fieldset button {
 	background-color: #f7f7f7;
