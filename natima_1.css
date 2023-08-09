@@ -69,7 +69,7 @@ border-bottom-color: rgba(0,0,0,0.07);
 #header .header-top {
 	padding-right: 40px;
 	justify-content: flex-end;
-	gap: 15px;
+	gap: 25px;
 }
 
 #header .header-top .site-name-wrapper {
