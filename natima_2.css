@@ -457,22 +457,31 @@ button:hover,
 	min-width: 24.5%;
 	border-radius: var(--border-radius);
 }
-.carousel-inner .carousel-banner-button {
+.carousel-inner .carousel-banner-content{
+	display: flex;
 	position: absolute;
-	height: auto;
-	padding: 1.3em 1.2em;
-	border-radius: var(--border-radius);
-	bottom: 10px;
-	right: 10px;
-	color: white;
-	background-color: var(--color-primary);
-	font-weight: 600;
-	transition: all 0.3s ease-out;
-	font-size: 1rem;
+	bottom: 30px;
+	left: 40px;
+	color: var(--color-gray-800);
 }
-.carousel-inner .item:hover .carousel-banner-button {
-	background-color: var(--color-tertiary-hover);
+
+.carousel-inner .carousel-banner-button {
+    height: auto;
+    padding: 1.3em 1.2em;
+    border-radius: var(--border-radius);
+	right: auto;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+    font-size: 0.85rem;
 }
+
+.carousel-inner .carousel-banner-content.dark .carousel-banner-button{
+	 background-color: white;
+}
+.carousel-inner .carousel-banner-content.bright .carousel-banner-button {
+    background-color: var(--color-gray-800);
+}
+
 .carousel-control {
 	display: none;
 }
