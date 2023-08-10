@@ -528,7 +528,7 @@ button:hover,
 	border-radius: var(--border-radius);
 }
 .products-block.products .slick-list .product .image img {
-	margin: 40px 0;
+	margin: 50px 0;
 	filter:brightness(1.02);
 }
 /*relative pro kosiku*/
