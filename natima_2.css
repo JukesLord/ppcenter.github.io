@@ -543,7 +543,7 @@ button:hover,
 	position: absolute;
 	top: 0;
 	height: 40px;
-	transform: translatey(-100%);
+	transform: translatey(-160%);
 	width: 100%;
 }
 /*pocet do kosiku*/
