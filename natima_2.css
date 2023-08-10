@@ -505,7 +505,6 @@ button:hover,
 }
 .products-block.products .slick-list .product .p {
 	padding: 0;
-	display: grid;
 }
 /*vlajecky homepage*/
 .slick-list .flags .flag {
