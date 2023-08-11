@@ -569,6 +569,16 @@ position: absolute;
 	width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
 /*produktyy homepage*/
 .products-block.products .slick-list .product .p .image {
 	margin-bottom: 0;
@@ -654,15 +664,88 @@ position: absolute;
 .products-block.products .product:hover .btn:hover:before {
 	background: var(--color-tertiary-hover)!important;
 }
-.products-block.products .product .p-desc {
-	display: block;
+
+.slick-slider.products  .product .p-in {
+	display: grid;
+	grid-template-rows: 1fr;
+	padding: 0;
+	height: 105px;
+	margin-top: 10px;
+}
+
+.slick-slider.products  .product .p-in .p-in-in{
+	grid-row-start: 1;
+	grid-column: 1;
+	display: grid;
+	grid-template-rows: max-content max-content 1fr;
+	height: 100%;
+}
+.slick-slider.products  .product .p-in .p-bottom {
+	grid-row-start: 1;
+	grid-column: 1;
+	height: 100%;
+}
+
+.slick-slider.products  .product .p-in .p-bottom > div {
+	display: grid;
+	grid-template-rows: max-content 1fr max-content;
+	height: 100%;
+}
+
+.slick-slider.products  .product .p-in .p-in-in .name {
+	grid-row: 2;
+	min-height: auto;
+	margin: 0;
+	text-align: left;
+	font-weight: 500;
+	
+}
+.slick-slider.products  .product .p-in .p-in-in a span{
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.slick-slider.products  .product .p-in .p-in-in .ratings-wrapper {
+		grid-row: 1;
+}
+
+.slick-slider.products  .product .p-in .p-bottom > div .prices{
+	grid-row: 1;
+	text-align: left;
+	margin: auto;
+	margin-left: 0;
+}
+
+.products-block.products .product .prices .price-final strong {
+	font-size: 14px;
+}
+.slick-slider.products  .product .p-in .p-bottom > div .prices .price-final {
+	margin: 0
+}
+.slick-slider.products  .product .p-in .p-bottom > div .p-desc{
+	grid-row: 3;
+	margin: 0;
+	font-size: 12px;
 	max-height: 999px;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
-	-webkit-line-clamp: 2;
+	-webkit-line-clamp: 3;
 	overflow: hidden;
 	color: var(--color-gray-600);
 }
+.slick-slider .product .ratings-wrapper::after {
+	content: "*****";
+	margin-left: auto;
+	color: rgb(153,134,28);
+	font-size: 16px;
+}
+.slick-slider .product .availability {
+	display: none;
+}
+
 
 @keyframes hoverOpacity {
 	from {
