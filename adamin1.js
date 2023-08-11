@@ -948,36 +948,36 @@
                 } else {
                     var initOneSlick = function (element) {
                         element.slick({
-                            slidesToShow: 7.5,
+                            slidesToShow: 5.5,
                             slidesToScroll: 1,
                             swipeToSlide: true,
                             infinite: false,
                             autoplay: true,
                             dots: false,
-                            autoplaySpeed: 3000,
+                            autoplaySpeed: 6000,
                             responsive: [
                                 {
                                     breakpoint: 1500,
-                                    settings: {
-                                        slidesToShow: 5.5,
-                                    }
-                                },
-                                {
-                                    breakpoint: 1200,
                                     settings: {
                                         slidesToShow: 4.5,
                                     }
                                 },
                                 {
-                                    breakpoint: 992,
+                                    breakpoint: 1200,
                                     settings: {
                                         slidesToShow: 3.5,
                                     }
                                 },
                                 {
-                                    breakpoint: 600,
+                                    breakpoint: 992,
                                     settings: {
                                         slidesToShow: 2.5,
+                                    }
+                                },
+                                {
+                                    breakpoint: 600,
+                                    settings: {
+                                        slidesToShow: 1.5,
                                     }
                                 }
                             ]
