@@ -525,11 +525,14 @@ position: absolute;
 .type-index .banners-row {
 	margin: 0;
 }
+
+
 /*carousel značky*/
 .next-to-carousel-banners {
 	margin: 0;
+	margin-top: 40px;
+	padding-top: calc(45px + 20px);
 	max-width: 100%;
-	margin-top: var(--gap);
 }
 .normal-banners-line {
 	display: grid!important;
@@ -545,6 +548,23 @@ position: absolute;
 	transform: scale(1.02);
 	filter:contrast(0.95);
 }
+/*nadpis oblíbené značky*/
+.next-to-carousel-banners .normal-banners-line .banner-wrapper:first-child{
+	position: absolute;
+	top: 0;
+}
+/*Nadpisy na hl stránce*/
+.content-wrapper .h4 {
+	font-size: 1.6rem;
+	width: fit-content;
+	padding-bottom: 4px;
+	margin-bottom: 20px;
+}
+.content-wrapper .h4::after{
+	height: 1px;
+	width: 100%;
+}
+
 /*produktyy homepage*/
 .products-block.products .slick-list .product .p .image {
 	margin-bottom: 0;
