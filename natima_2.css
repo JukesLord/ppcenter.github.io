@@ -1,7 +1,6 @@
 /*produkty test*/
-#products-2 {
-	width: 100%!important;
-	height: auto!important;
+.product {
+	width: 200px!important;
 }
 
 
