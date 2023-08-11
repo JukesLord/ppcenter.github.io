@@ -538,13 +538,13 @@ position: absolute;
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
     column-gap: var(--gap);
-	padding-top: 66px;
 }
 .normal-banners-line .banner-wrapper {
 	margin-bottom: 0;
 	border-radius: var(--border-radius);
 }
-.next-to-carousel-banners .banner-wrapper img{
+.next-to-carousel-banners .banner-wrapper img,
+.next-to-carousel-banners .banner-wrapper{
 	min-height: auto;
 }
 .next-to-carousel-banners .banner-wrapper:hover > img,
