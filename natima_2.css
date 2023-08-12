@@ -12,7 +12,12 @@ body .container.navigation-wrapper {
 	width: 100%;
 	padding: 0;
 }
-.top-navigation-bar .container {
+.top-navigation-bar {
+	display: none;
+}
+
+/*caused overflow*/
+body.blank-mode .container.breadcrumbs-wrapper:before, .breadcrumbs-wrapper:before{
 	display: none;
 }
 
@@ -688,7 +693,7 @@ position: absolute;
 
 .slick-slider.products  .product .p-in .p-bottom > div {
 	display: grid;
-	grid-template-rows: max-content 1fr max-content;
+	grid-template-rows: max-content 0.85fr 1fr;
 	height: 100%;
 }
 
@@ -697,7 +702,9 @@ position: absolute;
 	min-height: auto;
 	margin: 0;
 	text-align: left;
-	font-weight: 500;
+	font-weight: 600;
+	padding-top: 2px;
+	letter-spacing: -0.2px;
 	
 }
 .slick-slider.products  .product .p-in .p-in-in a span{
@@ -706,12 +713,33 @@ position: absolute;
     	-webkit-box-orient: vertical;
 	overflow: hidden;
 	font-size: 15px;
-    	font-weight: 500;
+    	font-weight: 600;
+	letter-spacing: -0.2px;
     	color: var(--color-gray-800);
 }
 
-.slick-slider.products  .product .p-in .p-in-in .ratings-wrapper {
-		grid-row: 1;
+/*stars*/
+.slick-slider.products  .product .p-in .p-in-in .ratings-wrapper{
+	height: 20px;
+	grid-row: 1;
+}
+.products-block.products .product .stars-placeholder, .products-block.products .product .p .stars-wrapper{
+	position: relative;
+	top: auto;
+	left: auto;
+	transform: none;
+	align-self: flex-end
+}
+.products-block.products .product .ratings-wrapper .stars{
+	width: auto;
+		margin-bottom: auto;
+}
+.products-block.products .product .ratings-wrapper .stars .star{
+	width: 13px;
+}
+.products-block.products .product .ratings-wrapper .stars .star:before{
+	font-size: 12px;
+	color: #f0b820!important;
 }
 
 .slick-slider.products  .product .p-in .p-bottom > div .prices{
@@ -724,7 +752,7 @@ position: absolute;
 .products-block.products .product .prices .price-final strong {
 	font-size: 15px;
     	color: var(--color-gray-800)!important;
-    	font-weight: 600;
+    	font-weight: 800;
 }
 .slick-slider.products  .product .p-in .p-bottom > div .prices .price-final {
 	margin: 0
@@ -733,24 +761,30 @@ position: absolute;
 	grid-row: 3;
 	margin: 0;
 	font-size: 13px;
-	font-weigh: 300;
 	max-height: 999px;
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
 	overflow: hidden;
-	color: var(--color-gray-600);
-}
-.slick-slider .product .ratings-wrapper::after {
-	content: "*****";
-	margin-left: auto;
-	color: rgb(153,134,28);
-	font-size: 16px;
+	font-weight: 400;
+	color: #5e5e5e
 }
 .slick-slider .product .availability {
 	display: none;
 }
 
+/*blog*/
+.news-wrapper .news-item .image{
+	height: auto;
+}
+
+.news-wrapper .news-item .image img{
+	position: relative;
+	top: auto;
+	left: auto;
+	transform: none;
+	width: 100%;
+}
 
 @keyframes hoverOpacity {
 	from {
