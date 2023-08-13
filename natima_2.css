@@ -410,7 +410,7 @@ button:hover,
 	color: var(--color-gray-800);
 }
 #header #navigation ul.menu-level-1 > li:first-child > a {
-	padding-left: 30px;
+	padding: 0px 15px 0px 30px;
 }
 .menu-level-1 .submenu-arrow {
 	display: none;
