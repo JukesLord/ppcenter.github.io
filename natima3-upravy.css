@@ -363,8 +363,8 @@ display: flex;
 .sidebar-left .sidebar-inner {
 	padding-top: 0 !important;
 }
-.sidebar .cart-sidebar-box.fixed .popup-widget-inner {
-	max-height: calc(100vh - 214px) !important;
+.sidebar .cart-sidebar-box .popup-widget-inner {
+	max-height: 410px!important;
 }
 /*banery v sidebaru*/
 .sidebar-inner .banner img {
