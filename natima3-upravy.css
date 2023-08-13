@@ -183,7 +183,7 @@ display: flex;
 }
 
 /*animace kosiku v produktu*/
-.type-product .cart-sidebar-box{
+.type-product .sidebar .sidebar-inner .cart-sidebar-box{
 	position: absolute!important;
 	transition: top 1s ease-in-out!important;
 	top: calc(100% + 10px)!important;
