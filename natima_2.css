@@ -10,7 +10,7 @@ body.blank-mode .container {
 body .container.navigation-wrapper {
 	max-width: 100%;
 	width: 100%;
-	padding: 0;
+	padding: 0!important;
 }
 .top-navigation-bar {
 	display: none;
