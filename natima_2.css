@@ -404,7 +404,7 @@ button:hover,
 	background: #f7f7f7;
 }
 #header #navigation ul.menu-level-1 > li > a {
-	padding: 0 20px 0 0;
+	padding: 0 10px 0 10px;
 	color: var(--color-primary);
 	color: white;
 	color: var(--color-gray-800);
