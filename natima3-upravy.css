@@ -1,8 +1,11 @@
 /*detail produktu*/
 .multiple-columns-body.type-product .content-wrapper-in {
-	--sidebar-width: clamp(320px, 37%, 1200px);
+	--sidebar-width: clamp(460px, 33%, 600px);
 }
 
+.multiple-columns-body.type-product .sidebar-inner {
+	padding-left: 40px;
+}
 .p-detail .p-detail-inner .p-image {
 	position: relative;
 }
