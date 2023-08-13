@@ -338,9 +338,7 @@ display: flex;
 .sidebar .cart-sidebar-box .cart-sidebar-inner {
 	padding: 0 !important;
 	height: auto!important;
-	display: grid!important;
-	grid-template-rows: 1fr;
-	transition: grid-template-rows 0.3s ease-in-out;
+	display: block!important;
 }
 .sidebar .cart-sidebar-box:hover .cart-sidebar-inner {
 	grid-template-rows: 1fr;
@@ -366,7 +364,7 @@ display: flex;
 	padding-top: 0 !important;
 }
 .sidebar .cart-sidebar-box.fixed .popup-widget-inner {
-	max-height: 410px!important;
+	max-height: calc(100vh - 214px) !important;
 }
 /*banery v sidebaru*/
 .sidebar-inner .banner img {
