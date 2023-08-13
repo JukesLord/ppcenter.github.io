@@ -575,22 +575,20 @@ position: absolute;
 }
 
 
-
-
-
-
-
-
-
-
-
-/*produktyy homepage*/
-.products-block.products .slick-list .product .p .image {
-	margin-bottom: 0;
+/*sede pozadi produktové fotky*/
+.products-block .image::after {
+	content: "";
+	position: absolute;
+	inset: 0;
+	pointer-events: none;
+	background-color: hsla(203,7%,47%,.06);
+	border-radius: var(--border-radius);
 }
-.products-block.products .slick-list .product .p {
-	padding: 0;
+
+.products-block .product .image img {
+	filter:brightness(1.02);
 }
+
 /*vlajecky homepage*/
 .slick-list .flags .flag {
 	display: none;
@@ -603,19 +601,8 @@ position: absolute;
 .slick-slider .p-code {
 	display: none;
 }
-/*sede pozadi produktové fotky*/
-.products-block .image::after {
-	content: "";
-	position: absolute;
-	inset: 0;
-	pointer-events: none;
-	background-color: hsla(203,7%,47%,.06);
-	border-radius: var(--border-radius);
-}
-.products-block.products .slick-list .product .image img {
-	margin: 50px 0;
-	filter:brightness(1.02);
-}
+
+
 /*relative pro kosiku*/
 .p-in {
 	position: relative;
@@ -623,25 +610,8 @@ position: absolute;
 .products-block.products .product .p-in:before {
 	content: none;
 }
-/*do kosiku*/
-.p-tools {
-	position: absolute;
-	top: 0;
-	height: 40px;
-	transform: translatey(-122%);
-	width: 100%;
-}
-/*pocet do kosiku*/
-.p-tools .quantity {
-	display: none;
-}
 
 /*pridat do kosiku*/
-.p-tools form {
-	height: 100%;
-	width: 100%;
-}
-
 .products-block.products .product button,
 .products-block.products .product .btn {
 	width: 100%!important;
@@ -670,6 +640,7 @@ position: absolute;
 	background: var(--color-tertiary-hover)!important;
 }
 
+/* SMAZAT?
 .slick-slider.products  .product .p-in {
 	display: grid;
 	grid-template-rows: 1fr;
@@ -677,7 +648,6 @@ position: absolute;
 	height: 110px;
 	margin-top: 10px;
 }
-
 .slick-slider.products  .product .p-in .p-in-in{
 	grid-row-start: 1;
 	grid-column: 1;
@@ -717,8 +687,6 @@ position: absolute;
 	letter-spacing: -0.2px;
     	color: var(--color-gray-800);
 }
-
-/*stars*/
 .slick-slider.products  .product .p-in .p-in-in .ratings-wrapper{
 	height: 20px;
 	grid-row: 1;
@@ -732,14 +700,7 @@ position: absolute;
 }
 .products-block.products .product .ratings-wrapper .stars{
 	width: auto;
-		margin-bottom: auto;
-}
-.products-block.products .product .ratings-wrapper .stars .star{
-	width: 13px;
-}
-.products-block.products .product .ratings-wrapper .stars .star:before{
-	font-size: 12px;
-	color: #f0b820!important;
+	margin-bottom: auto;
 }
 
 .slick-slider.products  .product .p-in .p-bottom > div .prices{
@@ -772,6 +733,7 @@ position: absolute;
 .slick-slider .product .availability {
 	display: none;
 }
+*/
 
 /*blog*/
 .news-wrapper .news-item .image{
