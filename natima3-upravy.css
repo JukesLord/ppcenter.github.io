@@ -363,6 +363,7 @@ display: flex;
 .sidebar-left .sidebar-inner {
 	padding-top: 0 !important;
 }
+.sidebar .cart-sidebar-box.fixed .popup-widget-inner,
 .sidebar .cart-sidebar-box .popup-widget-inner {
 	max-height: 410px!important;
 }
