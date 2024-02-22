@@ -1127,3 +1127,17 @@ ol.cart-header>li>strong::before{
     }
   }
 }
+
+
+
+.products-additional.products-related {
+	width: 100%!important;
+}
+
+.products-additional.products-related .products-block{
+	width: 100%!important;
+}
+
+.products-additional.products-related .products-block .product{
+	width: 33.333%!important;
+}
